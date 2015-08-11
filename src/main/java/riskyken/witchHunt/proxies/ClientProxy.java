@@ -8,6 +8,7 @@ import java.util.Set;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import riskyken.witchHunt.WitchHunt;
+import riskyken.witchHunt.client.handler.RenderHandler;
 import riskyken.witchHunt.client.render.TileEntitySpecialRendererWrapper;
 
 public class ClientProxy extends CommonProxy {
@@ -20,6 +21,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init() {
         super.init();
+        new RenderHandler();
     }
 
     @Override
